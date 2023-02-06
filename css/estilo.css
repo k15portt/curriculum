@@ -1,0 +1,85 @@
+* {
+	font-family: 'Roboto', sans-serif;
+}
+
+header {
+	background: #17202A;
+	height: 250px;
+	color: #FAD7A0;
+	text-align: center;
+	margin: 10px 10px 10px 10px;
+	padding: 20px 20px 20px 20px;
+}
+.frame {
+	max-width: 730px;
+	margin-bottom: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+.card {
+	padding: 20px 0;
+	z-index: 5;
+}
+.card_offset {
+	margin-top: -200px;
+	margin-right: 0;
+	margin-bottom: 0;
+	margin-left: 0;
+}
+.foto{
+	position: relative;
+	background: #fff;
+	padding: 5px;
+	width: 150px;
+	border: 1px solid rgba(0, 0, 0, 0.25);
+	transform: translateX(-50%);
+    left: 50%;
+}
+.card:after{
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 130px;
+	top: 0;
+	background: #C2DEFE;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+	z-index: -1;
+}
+.user_title{
+	color: #999;
+	font-size: 18px;
+	margin: 0;
+	text-align: center;
+	background-color: #C2DEFE;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+.user_value{
+	color: #2c2e31;
+	font-size: 38px;
+	margin: 5px;
+	margin-right: 10px;
+	text-transform: capitalize;
+	text-align: center;
+}
+.list_val li {
+	font-size: 21px;
+    cursor: pointer;
+    display: block;
+    width: 40px;
+    height: 48px;
+    margin: 20px;
+    margin-right: 45px;
+    background-size: 378px;
+    background-position-y: -48px;
+}
+footer{
+	background: #17202A;
+	color: #FAD7A0;
+	text-align: center;
+	margin: 10px;
+	padding: 10px;
+}
+.lista{
+	padding-right: 45px;
+	text-align: left;
+}

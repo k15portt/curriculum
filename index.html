@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head lang="es">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title id="titulo">Curriculum</title>
+
+	<!-- Libreria Css Externa personalizada -->
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+
+	<!-- Utiliza Framwork Boostrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+	<!-- Utiliza FontAwesome -->
+	<link rel="stylesheet" type="text/css" href="fontawesome/css/solid.min.css">
+	<link rel="stylesheet" type="text/css" href="fontawesome/css/fontawesome.min.css">
+	<script src="fontawesome/js/solid.min.js"></script>
+	<script src="fontawesome/js/fontawesome.min.js"></script>
+
+	<!-- Utilizamos Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,100&family=Sofia+Sans&display=swap" rel="stylesheet">
+
+	<!-- Agregamos un favicon -->
+	<link rel="icon" type="image/png" href="images/favicon.png" sizes="16x16">
+</head>
+<body>
+	<header>
+		<p class="h2" id="h1principal"></p>
+	</header>
+	<main>
+		<div class="container-fluid card_offset frame px-4">
+			<!--Modificar para que queden la foto y el nombre en la misma linea ROW-->
+			<div class="card">
+				<img id="foto_user" class="rounded-circle foto" src="" alt="Foto de presentación">
+				<p class="user_title">Nombre y Apellido</p>
+				<p class="user_value" id="nombre_usuario"></p>
+				
+				<ul class="list_val row" style="text-align:center;">
+					<li class="col-1 fa-solid fa-envelope"></li>
+					<div class="col-10">
+						<p class="lista" id="email"></p>
+					</div>
+					<li class="col-1 fa-solid fa-phone"></li>
+					<div class="col-10">
+						<p class="lista" id="telefono"></p>
+					</div>
+					<li class="col-1 fa-solid fa-house"></li>
+					<div class="col-10">
+						<p class="lista" id="cuidad"></p>
+					</div>
+					<li class="col-1 fa-solid fa-user"></li>
+					<div class="col-10">
+						<p class="lista" id="username"></p>
+					</div>
+					<li class="col-1 fa-solid fa-lock"></li>
+					<div class="col-10">
+						<p class="lista" id="password"></p>
+					</div>
+				</ul>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<p id="pie_de_pagina"></p>
+	</footer>
+
+	<!-- Utiliza Framwork Boostrap -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+	<!-- Utilizamos un documento JS externo personalizado -->
+	<script src="js/script.js"></script>
+</body>
+</html>
