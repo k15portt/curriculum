@@ -24,29 +24,29 @@ function cambiar_datos(persona){
 		' ' + persona['0'].name.last;
 	
 	//Cambiamos el correo electrónico
-	document.getElementById('email').innerHTML='Correo electrónico: ' + persona['0'].email;
+	document.getElementById('email').innerHTML='<span>Correo electrónico:</span> ' + persona['0'].email;
 	
 	//Cambiamos el número de teléfono
-	document.getElementById('telefono').innerHTML='Nº de Teléfono: ' + persona['0'].phone;
+	document.getElementById('telefono').innerHTML='<span>Nº de Teléfono:</span> ' + persona['0'].phone;
 	
 	//Cambiamos la dirección por una compuesta (Calle n° - Ciudad - País)
-	document.getElementById('cuidad').innerHTML='Dirección: ' + persona['0'].location.street.name + 
+	document.getElementById('cuidad').innerHTML='<span>Dirección:</span> ' + persona['0'].location.street.name + 
 		' ' + persona['0'].location.street.number + 
 		' - ' + persona['0'].location.city + 
 		' - ' + persona['0'].location.country;
 	
 	//Cambiamos el Usuario anexando su codificacion MD5
-	document.getElementById('username').innerHTML='Usuario: ' 
+	document.getElementById('username').innerHTML='<span>Usuario:</span> ' 
 		+ persona['0'].login.username + 
 		' [MD5: ' + persona['0'].login.md5 + ']';
 	
 	//Cambiamos su contraseña agregando el ID de la sesión
-	document.getElementById('password').innerHTML='Contrseña: ' 
+	document.getElementById('password').innerHTML='<span>Contraseña:</span> ' 
 		+ persona['0'].login.password + 
 		' - ' + persona['0'].login.uuid;
 	
 	//Cambiamos el pie de página para dar información de donde se obtudo la información y el ID usado
-	document.getElementById('pie_de_pagina').innerHTML="Datos obtenidos de https://randomuser.me --> " 
+	document.getElementById('pie_de_pagina').innerHTML="Datos obtenidos de <span>https://randomuser.me</span> || " 
 		+ persona['0'].id.name + 
 		' | ' + persona['0'].id.value;
 	

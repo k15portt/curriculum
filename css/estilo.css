@@ -2,29 +2,28 @@
 	font-family: 'Roboto', sans-serif;
 }
 
+body {
+	background-color: #615E5E;
+	margin: 0;
+}
+
 header {
 	background: #17202A;
 	height: 250px;
 	color: #FAD7A0;
 	text-align: center;
-	margin: 10px 10px 10px 10px;
 	padding: 20px 20px 20px 20px;
 }
 .frame {
 	max-width: 730px;
-	margin-bottom: auto;
-	margin-left: auto;
-	margin-right: auto;
+	overflow: hidden;
 }
 .card {
-	padding: 20px 0;
+	padding: 20px 0 0 0;
 	z-index: 5;
 }
 .card_offset {
-	margin-top: -200px;
-	margin-right: 0;
-	margin-bottom: 0;
-	margin-left: 0;
+	margin-top: -150px;
 }
 .foto{
 	position: relative;
@@ -61,25 +60,21 @@ header {
 	text-transform: capitalize;
 	text-align: center;
 }
-.list_val li {
-	font-size: 21px;
-    cursor: pointer;
-    display: block;
-    width: 40px;
-    height: 48px;
-    margin: 20px;
-    margin-right: 45px;
-    background-size: 378px;
-    background-position-y: -48px;
-}
 footer{
 	background: #17202A;
 	color: #FAD7A0;
 	text-align: center;
-	margin: 10px;
 	padding: 10px;
+	bottom: 0;
+	width: 100%;
+	margin-top: 10px;
 }
-.lista{
-	padding-right: 45px;
-	text-align: left;
+.table{
+	width: 90%;
+	margin: 5%;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+}
+span{
+	font-weight: bold;
 }
