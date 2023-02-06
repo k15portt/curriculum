@@ -14,8 +14,8 @@ function cambiar_datos(persona){
 	//cambiamos titulo del documeto para que diga cuando se registro el Curriculum
 	document.getElementById("titulo").innerHTML = "Curriculum registrado " + persona['0'].registered.date;
 	//cambiamos el titulo principal
-	let parrafo = document.getElementById('h1principal');
-	parrafo.innerHTML='Curriculum Vitae de ' + persona['0'].login.username;
+	//let parrafo = document.getElementById('h1principal');
+	//parrafo.innerHTML='Curriculum Vitae de ' + persona['0'].login.username;
 	let nombre=persona['0'].name.title + ' ' + persona['0'].name.first + ' ' + persona['0'].name.last;
 	document.getElementById('nombre_usuario').innerHTML=nombre;
 	let email = persona['0'].email;
